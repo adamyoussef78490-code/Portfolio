@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Welcome</title>
+
+  <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+
+  <div class="grid"></div>
+
+  <div class="blur blur1"></div>
+  <div class="blur blur2"></div>
+
+  <section class="container">
+
+    <div class="card">
+
+      <p class="small-title">
+        Welcome
+      </p>
+
+      <h1>
+        What's Your <span>Name?</span>
+      </h1>
+
+      <p class="desc">
+        Enter your name to continue to Adam's Portfolio Experience.
+      </p>
+
+      <input 
+      type="text" 
+      id="username"
+      placeholder="Enter your name">
+
+      <button onclick="goToHome()">
+        Continue →
+      </button>
+
+    </div>
+
+  </section>
+
+  <script>
+
+    function goToHome(){
+
+      let username = document.getElementById("username").value;
+
+      if(username.trim() === ""){
+
+        alert("Please Enter Your Name");
+
+      }
+
+      else{
+
+        window.location.href = "Home.html";
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
